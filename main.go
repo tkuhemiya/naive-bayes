@@ -20,7 +20,8 @@ func main() {
 	fmt.Println("Total ham Docs: ", model.hamDocCount)
 	fmt.Println("Total spam Docs: ", model.spamDocCount)
 
-	test := "whenever people talk about shipping speed they focus on 0 to 1"
+	test := `Naive Bayes is a simple probabilistic classifier based on Bayes’ theorem with a “naive” independence assumption: it assumes every feature (like each
+ token in a document) is independent of the others given the class label. Despite that simplification, it works surprisingly well in practice`
 
 	label, lHam, lSpam := model.Predict(test)
 
